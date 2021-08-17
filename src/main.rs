@@ -1,6 +1,6 @@
 use clap::{Clap, AppSettings};
 use crate::db::{copy_out, copy_in};
-use std::fs::{File, remove_file};
+use std::fs::{remove_file};
 
 pub mod db;
 
