@@ -27,6 +27,7 @@ pub fn copy_in(client: &mut Client, table_name: &str, input_path: &str) -> anyho
 
     println!("Copying in from {}", input_path);
     std::io::copy(&mut r, &mut w)?;
+    w.finish()?;
 
     Ok(())
 }
